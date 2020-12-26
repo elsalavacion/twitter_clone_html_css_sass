@@ -8,9 +8,13 @@
   {
    height: fit-content;
   }
+  .login 
+  {
+    width: 90%;
+  }
 }
 
-// iphone 6/7/8 and iphone 6/7/8+
+// iphone 6/7/8
 @media(max-width: 375px) and (max-height: 667px)
 {
 
@@ -19,15 +23,33 @@
   {
    height: fit-content;
   }
+
+  .login 
+  {
+    width: 90%;
+  }
+}
+
+// iphone 6/7/8+
+@media(max-width: 414px) and (max-height: 736px)
+{
+  .login 
+  {
+    width: 90%;
+  }
 }
 
 // galaxy
 @media(max-width: 360px) and (max-height: 640px)
 {
-
   // main
   .main
   {
    height: fit-content;
+  }
+
+  .login 
+  {
+    width: 90%;
   }
 }

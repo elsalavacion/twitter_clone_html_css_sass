@@ -21,6 +21,12 @@
       min-height: fit-content;
     }
   }
+
+   // login
+   .login 
+   {
+     width: 75%;
+   }
 }
 
 
@@ -30,5 +36,28 @@
   .main
   {
     height: max-content;
+  }
+    // login
+    .login 
+    {
+      width: 75%;
+    }
+}
+
+
+// for login 
+@media(max-width: 700px) and (max-height: 1280px){
+    // login
+    .login 
+    {
+      width: 75%;
+    }
+}
+
+@media(max-width: 600px) and (max-height: 1280px){
+  // login
+  .login 
+  {
+    width: 75%;
   }
 }

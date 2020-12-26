@@ -1,0 +1,147 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  margin: 25px auto;
+
+  //icon
+  &-icon {
+    color: rgb(0, 189, 252);
+    margin: 10px auto;
+  }
+
+  // heading
+  &-heading {
+    font-size: 22px;
+    margin: 20px auto;
+    font-weight: bolder;
+    letter-spacing: 2px;
+  }
+
+  // form
+  &-form {
+    width: 100%;
+
+    //  email
+    &-email {
+      height: 60px;
+      border: none;
+      position: relative;
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      color: rgb(145, 143, 143);
+
+      // paragraph
+      p {
+        font-size: 13px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+      }
+
+      //  input
+      input {
+        position: absolute;
+        padding: 10px;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: 2px solid rgba(211, 211, 211, 0.5);
+        border-radius: 5px;
+        
+        // focused
+      &:focus
+      {
+        border-color:  rgb(0, 189, 252);
+      }
+
+      }
+
+      // focused
+      &:focus-within
+      {
+        color:  rgb(0, 189, 252);
+      }
+    }
+
+    // password
+    &-password {
+      height: 60px;
+      border: none;
+      position: relative;
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      color: rgb(145, 143, 143);
+
+      // paragraph
+      p {
+        font-size: 13px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+      }
+
+      //  input
+      input {
+        position: absolute;
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: 2px solid rgba(211, 211, 211, 0.5);
+        border-radius: 5px;
+        
+      }
+
+      
+      // focused
+      &:focus-within
+      {
+        color: rgb(0, 189, 252);
+      }
+    }
+
+    // submit
+    &-submit 
+    {
+      padding: 10px;
+      
+      input 
+      {
+      background: rgba(0, 189, 252, 0.6);
+      color: white;
+      font-weight: bolder;
+      padding: 15px 0;
+      width: 100%;
+      border-radius: 25px;
+      border: none;
+
+      }
+
+    }
+
+      // btn
+  &-btn 
+  {
+    text-align: center;
+    margin: 20px auto;
+    a 
+    {
+    color: rgb(4, 94, 124);
+    padding: 0 5px;
+
+    //hover
+    &:hover
+    {
+      text-decoration: underline;
+    }
+    }
+  }
+  }
+
+
+}

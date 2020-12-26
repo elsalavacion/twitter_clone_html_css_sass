@@ -1,32 +1,30 @@
-@media(max-width: 1200px)
-{
-
+@media (max-width: 1200px) {
   // main
-  .main
-  {
-    &-right
-    {
-      &>div 
-      {
+  .main {
+    &-right {
+      & > div {
         width: 75%;
       }
     }
   }
+  // login
+  .login {
+    width: 60%;
+  }
 }
 
-
-@media(max-width: 950px)
-{
-
+@media (max-width: 950px) {
   // main
-  .main
-  {
-    &-right
-    {
-      &>div 
-      {
+  .main {
+    &-right {
+      & > div {
         width: 85%;
       }
     }
+  }
+
+  // login
+  .login {
+    width: 60%;
   }
 }
