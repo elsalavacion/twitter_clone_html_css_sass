@@ -1,0 +1,197 @@
+.signup {
+  width: 50%;
+  margin: 0 auto;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 5px 5px 100vw black;
+  display: none;
+  // top
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+
+    // icon
+    &-icon {
+      color: rgb(0, 189, 252);
+    }
+    //btn
+    &-btn {
+      button {
+        padding: 10px 20px;
+        background: rgba(0, 189, 252, 0.6);
+        color: white;
+        border: none;
+        border-radius: 25px;
+        font-weight: bolder;
+      }
+    }
+  }
+
+  // heading
+  &-heading {
+    h3 {
+      font-size: 22px;
+      margin: 15px 30px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+  }
+
+  // form
+  &-form {
+    padding: 15px 30px 75px;
+    //  name
+    &-name,
+    &-phone {
+      height: 60px;
+      border: none;
+      position: relative;
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      color: rgb(145, 143, 143);
+
+      // paragraph
+      p {
+        font-size: 13px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+      }
+
+      //  input
+      input {
+        position: absolute;
+        padding: 10px;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: 2px solid rgba(211, 211, 211, 0.5);
+        border-radius: 5px;
+        font-size: 18px;
+        // focused
+        &:focus {
+          border-color: rgb(0, 189, 252);
+        }
+      }
+
+      // focused
+      &:focus-within {
+        color: rgb(0, 189, 252);
+      }
+    }
+
+    // email
+    &-email {
+      margin: 20px 0;
+      a {
+        color: rgb(0, 189, 252);
+
+        // hover
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    // dob
+    &-dob {
+      // heading
+      &-heading {
+        font-size: 16px;
+        font-weight: bolder;
+      }
+
+      // motto
+      &-motto {
+        color: rgb(133, 133, 133);
+        padding-bottom: 10px;
+      }
+
+      // form
+      &-form {
+        display: flex;
+
+        //  day, month, year
+        &-day,
+        &-month,
+        &-year {
+          height: 60px;
+          border: none;
+          position: relative;
+          display: block;
+          width: 100%;
+          margin: 10px 0;
+          color: rgb(145, 143, 143);
+          margin: 5px;
+          // paragraph
+          p {
+            font-size: 13px;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+          }
+
+          //  select
+          select {
+            position: absolute;
+            padding: 10px;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: 2px solid rgba(211, 211, 211, 0.5);
+            border-radius: 5px;
+            font-size: 18px;
+
+            // focused
+            &:focus {
+              border-color: rgb(0, 189, 252);
+            }
+
+            option {
+              font-size: 18px;
+            }
+          }
+
+          // focused
+          &:focus-within {
+            color: rgb(0, 189, 252);
+          }
+        }
+        
+      }
+    }
+  }
+}
+
+// signup hide
+#signup-index, #signup-login
+{
+  display: none;
+}
+// label is checked
+#signup-login:checked ~ .signup 
+{
+  display: block;
+  z-index: 2;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+// label is checked
+#signup-index:checked ~ .signup 
+{
+  display: block;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}

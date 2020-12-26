@@ -23,8 +23,8 @@
   &-form {
     width: 100%;
 
-    //  email
-    &-email {
+    //  email  password
+    &-email, &-password {
       height: 60px;
       border: none;
       position: relative;
@@ -51,7 +51,7 @@
         background: transparent;
         border: 2px solid rgba(211, 211, 211, 0.5);
         border-radius: 5px;
-        
+        font-size: 18px;
         // focused
       &:focus
       {
@@ -64,44 +64,6 @@
       &:focus-within
       {
         color:  rgb(0, 189, 252);
-      }
-    }
-
-    // password
-    &-password {
-      height: 60px;
-      border: none;
-      position: relative;
-      display: block;
-      width: 100%;
-      margin: 10px 0;
-      color: rgb(145, 143, 143);
-
-      // paragraph
-      p {
-        font-size: 13px;
-        position: absolute;
-        top: 5px;
-        left: 5px;
-      }
-
-      //  input
-      input {
-        position: absolute;
-        padding: 10px;
-        width: 100%;
-        height: 100%;
-        background: transparent;
-        border: 2px solid rgba(211, 211, 211, 0.5);
-        border-radius: 5px;
-        
-      }
-
-      
-      // focused
-      &:focus-within
-      {
-        color: rgb(0, 189, 252);
       }
     }
 
@@ -129,7 +91,7 @@
   {
     text-align: center;
     margin: 20px auto;
-    a 
+    a,label 
     {
     color: rgb(4, 94, 124);
     padding: 0 5px;
@@ -138,6 +100,7 @@
     &:hover
     {
       text-decoration: underline;
+      cursor: pointer;
     }
     }
   }
