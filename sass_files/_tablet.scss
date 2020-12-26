@@ -22,3 +22,13 @@
     }
   }
 }
+
+
+// if height is small
+@media(max-height: 745px) and (max-width: 800px)
+{
+  .main
+  {
+    height: max-content;
+  }
+}

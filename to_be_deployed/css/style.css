@@ -112,6 +112,10 @@ a {
       width: 100%;
       min-height: fit-content; } }
 
+@media (max-height: 745px) and (max-width: 800px) {
+  .main {
+    height: max-content; } }
+
 @media (max-width: 1200px) {
   .main-right > div {
     width: 75%; } }
