@@ -5,7 +5,7 @@
   .main
   {
     flex-direction: column-reverse;
-    height: 90vh;
+    height: max-content;
     
     // left
     &-left

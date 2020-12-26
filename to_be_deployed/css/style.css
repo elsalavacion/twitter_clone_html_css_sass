@@ -104,7 +104,7 @@ a {
 @media (max-width: 800px) {
   .main {
     flex-direction: column-reverse;
-    height: 90vh; }
+    height: max-content; }
     .main-left {
       min-height: fit-content;
       width: 100%; }
