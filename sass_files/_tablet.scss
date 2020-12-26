@@ -1,0 +1,24 @@
+// tablets and ipad
+@media(max-width: 800px)
+{
+  // main
+  .main
+  {
+    flex-direction: column-reverse;
+    min-height: 90vh;
+    
+    // left
+    &-left
+    {
+      max-height: fit-content;
+      width: 100%;
+    }
+
+    // right
+    &-right
+    {
+      width: 100%;
+      max-height: fit-content;
+    }
+  }
+}

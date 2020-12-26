@@ -1,0 +1,21 @@
+.footer 
+{
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 20px;
+  span
+  {
+    color: #01013a;
+    padding: 0 5px;
+    a 
+  {
+    color: #01013a;
+
+    // hover
+    &:hover
+    {
+      text-decoration: underline;
+    }
+  }
+  }
+}

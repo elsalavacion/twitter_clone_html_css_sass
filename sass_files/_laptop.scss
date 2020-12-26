@@ -1,0 +1,32 @@
+@media(max-width: 1200px)
+{
+
+  // main
+  .main
+  {
+    &-right
+    {
+      &>div 
+      {
+        width: 75%;
+      }
+    }
+  }
+}
+
+
+@media(max-width: 950px)
+{
+
+  // main
+  .main
+  {
+    &-right
+    {
+      &>div 
+      {
+        width: 85%;
+      }
+    }
+  }
+}

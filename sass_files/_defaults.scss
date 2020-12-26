@@ -1,0 +1,23 @@
+* 
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body 
+{
+  font-family: $para-font;
+  position: relative;
+}
+
+h1,h2,h3
+{
+  font-family: $heading-font;
+}
+
+a 
+{
+  text-decoration: none;
+  color: black;
+}
