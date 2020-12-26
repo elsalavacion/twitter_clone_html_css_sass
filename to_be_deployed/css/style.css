@@ -16,7 +16,7 @@ a {
 
 .main {
   display: flex;
-  min-height: 90vh;
+  height: 90vh;
   justify-content: space-evenly; }
   .main-left {
     background: url(../img/left-2.jpg);
@@ -103,9 +103,10 @@ a {
 
 @media (max-width: 800px) {
   .main {
-    flex-direction: column-reverse; }
+    flex-direction: column-reverse;
+    height: 90vh; }
     .main-left {
-      max-height: fit-content;
+      min-height: fit-content;
       width: 100%; }
     .main-right {
       width: 100%;
